@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "PDF Dark Reader",
+    "version": "1.0.0",
+    "description": "Dark mode and reading themes for PDFs in Chrome.",
+    "permissions": [
+        "storage",
+        "activeTab",
+        "scripting"
+    ],
+    "host_permissions": [
+        "<all_urls>",
+        "file:///*"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "popup.html"
+    }
+}
